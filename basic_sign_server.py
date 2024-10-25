@@ -21,7 +21,7 @@ def get_context_page(instance, stealth_js_path):
 
 
 # 如下更改为 stealth.min.js 文件路径地址
-stealth_js_path = "/home/apps/xhs_sign/stealth.min.js"
+stealth_js_path = "./libs/stealth.min.js"
 print("正在启动 playwright")
 playwright = sync_playwright().start()
 browser_context, context_page = get_context_page(playwright, stealth_js_path)
